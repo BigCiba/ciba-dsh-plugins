@@ -18,6 +18,7 @@ git+https://github.com/BigCiba/ciba-dsh-plugins.git#<commit>&path:/packages/acco
 git+https://github.com/BigCiba/ciba-dsh-plugins.git#<commit>&path:/packages/side-chat
 ```
 
+- **`&path:/packages/<name>` 这一段不能省略**：仓库根目录不是插件包，省略后装到的是根目录，DSH 会报“这个包没有声明组合包，不能作为插件管理”。
 - `<commit>` 换成 40 位完整 commit SHA；在本仓库执行 `git rev-parse HEAD` 即可得到。
 - 用完整 commit 安装时，插件页才会把 Git 来源标记为可更新（配合插件索引）；直接写 `#main` 也能装，但以后只能移除再重装。
 - 公开仓库可以直接安装；私有仓库需要先在这台机器上配好 Git 凭据（HTTPS 凭据管理器或 SSH）。
@@ -44,6 +45,11 @@ pnpm --dir packages/account-balance pack --pack-destination out
    - `locale/*.json`、`icon.svg`、`README.md`
 2. 在本机 **Plugins → Add plugin → 本地目录** 安装验证。
 3. 提交后，在上面的安装说明里补一行对应 spec。
+
+## 常见报错
+
+- **“这个包没有声明组合包，不能作为插件管理”**：装到的是仓库根目录（或别的没有 `dsh.bundle` 的包），不是 `packages/<name>`。检查 spec 末尾是否保留了 `&path:/packages/account-balance` / `&path:/packages/side-chat`；也不要只填仓库网页地址。
+- **安装后看不到插件**：确认它出现在 **Plugins → 已安装插件** 里且开关是开的；Client 插件需要页面刷新或重启应用才会出现在界面上。
 
 ## 说明
 
