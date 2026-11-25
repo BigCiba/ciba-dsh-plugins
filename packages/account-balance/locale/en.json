@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Account balance",
+    "description": "Shows the signed-in DeepSeek account balance directly above the account launcher at the foot of the sidebar, while the sidebar is expanded. Click the row to refresh it right away; while the page is visible it also re-reads every three minutes and when the window regains focus. The row stays hidden while signed out, and the previous amount is cleared when the account changes."
+  }
+}

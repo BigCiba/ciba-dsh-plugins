@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Side chat",
+    "description": "Fork the current conversation into an independent side chat in the right sidebar without changing the main thread.",
+    "detail": "docs/DETAIL.md"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "侧边聊天",
+    "description": "从当前对话分叉出独立的侧边聊天，在右侧边栏并行讨论，不改动主对话。",
+    "detail": "docs/DETAIL.zh.md"
+  }
+}
