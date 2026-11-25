@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Roblox dev panel",
+    "description": "Opens a right-sidebar panel from the conversation header to run your Roblox project's npm scripts, pull/push/commit with git, and start or stop the Rojo dev server. Every action also appears in the conversation as a command card, so its output stays readable and searchable."
+  }
+}

@@ -8,6 +8,7 @@
 |---|---|
 | [`@local/account-balance`](packages/account-balance) | 在侧边栏账号入口正上方显示 DeepSeek 账号余额；点击立即刷新，页面可见时每 3 分钟自动刷新，窗口重新获得焦点时也会刷新。 |
 | [`@local/side-chat`](packages/side-chat) | 从当前会话派生一个独立的侧边会话，在右侧边栏继续，不打断主线。 |
+| [`@local/roblox-dev`](packages/roblox-dev) | 会话头一个 Roblox 按钮打开右侧面板：运行 npm 脚本、git 拉取/推送/提交、启停 Rojo 服务，也可用 `/rb` 命令。 |
 
 ## 在另一台电脑安装
 
@@ -29,6 +30,7 @@
 ```text
 git+https://github.com/BigCiba/ciba-dsh-plugins.git#<commit>&path:/packages/account-balance
 git+https://github.com/BigCiba/ciba-dsh-plugins.git#<commit>&path:/packages/side-chat
+git+https://github.com/BigCiba/ciba-dsh-plugins.git#<commit>&path:/packages/roblox-dev
 ```
 
 - **`&path:/packages/<name>` 这一段不能省略**：仓库根目录不是插件包，省略后装到的是根目录，DSH 会报“这个包没有声明组合包，不能作为插件管理”。
