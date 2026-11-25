@@ -1,0 +1,73 @@
+{
+  "format": 1,
+  "title": {
+    "en": "BigCiba DSH plugins",
+    "zh": "BigCiba 的 DSH 插件"
+  },
+  "description": {
+    "en": "Account balance and side chat for DeepSeek Harness.",
+    "zh": "DeepSeek Harness 的账号余额与侧边会话插件。"
+  },
+  "plugins": [
+    {
+      "name": "@local/account-balance",
+      "title": {
+        "en": "Account balance",
+        "zh": "账号余额"
+      },
+      "description": {
+        "en": "Shows the signed-in DeepSeek account balance directly above the sidebar account entry.",
+        "zh": "在侧边栏账号入口正上方直接显示已登录的 DeepSeek 账号余额。"
+      },
+      "icon": "packages/account-balance/icon.svg",
+      "author": "BigCiba",
+      "homepage": "https://github.com/BigCiba/ciba-dsh-plugins/tree/main/packages/account-balance",
+      "repository": {
+        "url": "https://github.com/BigCiba/ciba-dsh-plugins",
+        "directory": "packages/account-balance"
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "publishTimestamp": 1795594758,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/BigCiba/ciba-dsh-plugins",
+            "commit": "9cb3fbc287971809fb6ca93506a98dc482e8fd59",
+            "path": "packages/account-balance"
+          }
+        }
+      ]
+    },
+    {
+      "name": "@local/side-chat",
+      "title": {
+        "en": "Side chat",
+        "zh": "侧边会话"
+      },
+      "description": {
+        "en": "Forks the current conversation into an independent side chat in the right sidebar, without touching the main thread.",
+        "zh": "从当前会话派生一个独立的侧边会话，在右侧边栏继续，不影响主线。"
+      },
+      "icon": "packages/side-chat/icon.svg",
+      "author": "BigCiba",
+      "homepage": "https://github.com/BigCiba/ciba-dsh-plugins/tree/main/packages/side-chat",
+      "repository": {
+        "url": "https://github.com/BigCiba/ciba-dsh-plugins",
+        "directory": "packages/side-chat"
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1795594758,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/BigCiba/ciba-dsh-plugins",
+            "commit": "9cb3fbc287971809fb6ca93506a98dc482e8fd59",
+            "path": "packages/side-chat"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -11,6 +11,19 @@
 
 ## 在另一台电脑安装
 
+### 方式一：插件索引（推荐，不用手打 spec）
+
+仓库根目录的 `index.json` 是一个 DSH 插件索引（format 1）。新机器上：
+
+1. 打开 **插件 → 实验性插件 → 自定义插件索引**，打开开关（每台机器只需一次）。
+2. 进入 **发现 → 添加索引源**，填入：
+   `https://raw.githubusercontent.com/BigCiba/ciba-dsh-plugins/main/index.json`
+3. 在 **发现** 里点对应插件的 **安装**；以后有新提交时，索引里的版本也会在这里出现。
+
+索引里的版本指向一个固定 commit；每次更新插件后需要同步更新 `index.json`。
+
+### 方式二：手填 spec
+
 打开 DSH 侧边栏的 **Plugins**，点 **Add plugin**，填入对应包的 spec：
 
 ```text
